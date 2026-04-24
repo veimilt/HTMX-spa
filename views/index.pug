@@ -1,0 +1,19 @@
+extends layouts/layout
+
+block content
+  main
+    h2 All Articles
+    .article-list
+      include partials/list
+  footer
+    h2 Add a New Article
+    form(
+      method="post"
+      action="/articles"
+      hx-target=".article-list"
+      hx-push-url="false"
+      hx-indicator=".loader"
+      )
+      input(type="text" name="name" placeholder="article name" required)
+      textarea(name="body" placeholder="article text" required)
+      button.btn(type="submit") Add article
