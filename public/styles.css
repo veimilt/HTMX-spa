@@ -92,9 +92,9 @@ form * {
 }
 
 form textarea {
-  height: auto;
+  min-height: 100px;
   field-sizing: content;
-  resize: vertical;
+  resize: none;
   font-family: inherit;
 }
 
