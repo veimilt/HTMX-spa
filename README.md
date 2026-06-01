@@ -1,5 +1,9 @@
 # HTMX SPA
 
+## Link to the deployed application
+
+https://htmx-spa.onrender.com
+
 A small Express application that demonstrates server-rendered pages with Pug and partial page updates with HTMX.
 
 The app shows a simple article list, individual article pages, and a form for adding new articles. Full pages are rendered by Express with Pug templates, while HTMX updates the article list without a full browser refresh after a new article is submitted.

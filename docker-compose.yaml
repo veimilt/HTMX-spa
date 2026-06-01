@@ -1,0 +1,13 @@
+services:
+  htmx-spa:
+    build: .
+    command: node app.js
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    container_name: htmx-spa-dev
+
+volumes:
+  node_modules:
